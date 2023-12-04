@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint-fix": "next lint --fix",
+    "format": "prettier --write --cache \"**/*.{ts,tsx,md,scss}\"",
+    "prepare": "husky install && husky.sh"
   },
   "dependencies": {
     "eslint": "^8.55.0",
@@ -15,6 +18,8 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
     "@types/node": "^20",
@@ -22,6 +27,9 @@
     "@types/react-dom": "^18",
     "eslint-config-next": "^14.0.3",
     "eslint-config-prettier": "^9.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
     "typescript": "^5"
   }
 }

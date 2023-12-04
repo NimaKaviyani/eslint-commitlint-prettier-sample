@@ -1,16 +1,16 @@
 import React from "react";
 
-const Semi = ():void => {
+const Semi = () => {
   const object = { method: () => {} };
 
-  var name = "ESLint";
+  const name = "ESLint";
 
   object.method = function () {
     // ...
-  }
+  };
 
   class Foo {
-    bar = 1
+    bar = 1;
   }
 
   return <>Test Semi</>;

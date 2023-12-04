@@ -11,7 +11,7 @@ var b = 1;
 
 {
   alert(c);
-  let c = 1;
+  const c = 1;
 }
 
 {
@@ -28,7 +28,7 @@ var b = 1;
 {
   const C = class {
     static x = C;
-  }
+  };
 }
 
 {
@@ -36,7 +36,7 @@ var b = 1;
     static {
       C.x = "foo";
     }
-  }
+  };
 }
 
 export { foo };
